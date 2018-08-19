@@ -1,0 +1,5 @@
+1534670884867	geckodriver	INFO	geckodriver 0.20.1
+1534670884888	geckodriver	INFO	Listening on 127.0.0.1:34355
+1534670885906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.72HZKI2YAQDz"
+1534670896066	Marionette	INFO	Enabled via --marionette
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/addonsInfo.js, line 91: SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead

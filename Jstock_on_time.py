@@ -1,4 +1,4 @@
-
+# -*- coding:utf8 -*-
 
 
 
@@ -71,7 +71,7 @@ def get_spread():
 
 # 存入MySQL中
 def insertDB(content):
-    connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='on_time_DT',
+    connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='web_monitor',
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cursor = connection.cursor()
     cursor.executemany('insert into j_stocks (indexs,stock,spread) values (%s,%s,%s)', content)
