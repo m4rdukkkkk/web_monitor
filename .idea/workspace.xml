@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/HKstock_on_time.py" line="13" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e210e3ed-0350-414d-af10-152b89697ddb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Astock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/Astock_on_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HKstock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/HKstock_on_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on_time_spider.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/web_monitor$HKstock_on_time.coverage" NAME="HKstock_on_time Coverage Results" MODIFIED="1534670882749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/web_monitor$Astock_on_time.coverage" NAME="Astock_on_time Coverage Results" MODIFIED="1534681611250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/web_monitor$HKstock_on_time.coverage" NAME="HKstock_on_time Coverage Results" MODIFIED="1534680329209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/web_monitor$Jstock_on_time.coverage" NAME="Jstock_on_time Coverage Results" MODIFIED="1534668702663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -25,31 +27,38 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
-          <entry key="sql" value="1" />
+          <entry key="html" value="1" />
+          <entry key="py" value="6" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
-          <entry key="SQL" value="1" />
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="6" />
+          <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="246" />
+          <entry key="html" value="1" />
+          <entry key="py" value="1673" />
           <entry key="sql" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="246" />
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="1673" />
           <entry key="SQL" value="33" />
         </counts>
       </usages-collector>
@@ -57,26 +66,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="-184">
+              <caret line="38" selection-start-line="38" selection-end-line="43" selection-end-column="22" />
               <folding>
-                <element signature="e#27#36#0" expanded="true" />
+                <element signature="e#26#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#26#37#0" expanded="true" />
+                <marker date="1534681586093" expanded="true" signature="1508:1511" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
+        <entry file="file://$PROJECT_DIR$/create_table.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TEST.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -84,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" selection-start-line="17" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="323">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -95,12 +123,26 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>2721</find>
       <find>272</find>
       <find>恒生指数</find>
       <find>27,213.41</find>
+      <find>恒生</find>
+      <find>indexNu</find>
+      <find>&lt;p _ngcontent-uqj-21=&quot;&quot; class=&quot;indexNum&quot;&gt;</find>
+      <find>27213.412</find>
+      <find>337</find>
+      <find>沪深300指数期货(</find>
+      <find>4803.03</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,8 +153,9 @@
       <list>
         <option value="$PROJECT_DIR$/Jstock_on_time.py" />
         <option value="$PROJECT_DIR$/create_table.sql" />
-        <option value="$PROJECT_DIR$/Astock_on_time.py" />
         <option value="$PROJECT_DIR$/HKstock_on_time.py" />
+        <option value="$PROJECT_DIR$/TEST.html" />
+        <option value="$PROJECT_DIR$/Astock_on_time.py" />
       </list>
     </option>
   </component>
@@ -147,6 +190,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -165,7 +209,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HKstock_on_time">
+  <component name="RunManager" selected="Python.Astock_on_time">
+    <configuration name="Astock_on_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="web_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Astock_on_time.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="HKstock_on_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_monitor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,9 +279,11 @@
     <list>
       <item itemvalue="Python.Jstock_on_time" />
       <item itemvalue="Python.HKstock_on_time" />
+      <item itemvalue="Python.Astock_on_time" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Astock_on_time" />
         <item itemvalue="Python.HKstock_on_time" />
         <item itemvalue="Python.Jstock_on_time" />
       </list>
@@ -236,14 +304,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="850" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25681493" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2682927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47838214" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39888424" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -270,37 +339,45 @@
     <entry file="file://$PROJECT_DIR$/on_time_spider.py" />
     <entry file="file://$PROJECT_DIR$/create_table.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="171">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="323">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
+    <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="-184">
+          <caret line="38" selection-start-line="38" selection-end-line="43" selection-end-column="22" />
           <folding>
-            <element signature="e#24#33#0" expanded="true" />
+            <element signature="e#26#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
+    <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="197">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
-            <element signature="e#27#36#0" expanded="true" />
+            <element signature="e#26#37#0" expanded="true" />
+            <marker date="1534681586093" expanded="true" signature="1508:1511" ph="..." />
           </folding>
         </state>
       </provider>
