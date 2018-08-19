@@ -13,7 +13,7 @@ import requests
 from multiprocessing import Pool
 # driver = webdriver.Chrome()
 # 还必须要用selenium解决js渲染的问题 ,还是要寻找不用渲染的，因为要计算价差，同时解决两个渲染外加计算负担太大
-#新浪爬实时数据不是很理想 应该是被反爬虫处理了，
+#新浪爬实时数据不是很理想 应该是被反爬虫处理了，还是用的股市通
 
 def get_index():
     headers = {'Useragent':'Opera/9.80 (Windows NT 6.1; U; zh-cn) Presto/2.9.168 Version/11.50'}
