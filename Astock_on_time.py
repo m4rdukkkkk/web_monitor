@@ -3,14 +3,9 @@
 
 import time
 import re
-from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import pymysql
 import requests
-from multiprocessing import Pool
+
 # driver = webdriver.Chrome()
 # 还必须要用selenium解决js渲染的问题 ,还是要寻找不用渲染的，因为要计算价差，同时解决两个渲染外加计算负担太大
 #新浪爬实时数据不是很理想 应该是被反爬虫处理了，还是用的股市通
@@ -70,12 +65,14 @@ def insertDB(content):
 
 
 #
-#
+# 尝试数据源不一定稳定，勉强可以用下
 if __name__ == '__main__':
     while True:
         big_list = []
         get_index()
+        time.sleep(1)
         get_stocks()
+        time.sleep(1)
         get_spread()
         l_tuple = tuple(big_list)
         content = []

@@ -6,7 +6,6 @@ import re
 import datetime
 import time
 import requests
-from pymongo import MongoClient
 import pymysql
 
 
