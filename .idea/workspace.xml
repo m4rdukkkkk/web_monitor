@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e210e3ed-0350-414d-af10-152b89697ddb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web_monitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_monitor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Astock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/Astock_on_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HKstock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/HKstock_on_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jstock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jstock_on_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USstock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/USstock_on_time.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,27 +23,28 @@
     <session id="-1911759381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="7" />
+          <entry key="py" value="9" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="7" />
+          <entry key="Python" value="9" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -75,7 +70,6 @@
         <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" />
               <folding>
                 <element signature="e#26#37#0" expanded="true" />
               </folding>
@@ -87,21 +81,37 @@
         <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="108">
               <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
               <folding>
                 <element signature="e#26#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virsual_tes1/virsual_tes1/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/virsual_tes1/web_looking/views.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -116,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="76">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -187,6 +197,23 @@
             <path>
               <item name="web_monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_monitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
+              <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
+              <item name="web_looking" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,9 +360,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="714" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2680566" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2680566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,6 +393,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/on_time_spider.py" />
     <entry file="file://$PROJECT_DIR$/TEST.html" />
+    <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#26#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/create_table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -376,40 +418,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="76">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#26#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="108">
           <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
           <folding>
             <element signature="e#26#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virsual_tes1/virsual_tes1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virsual_tes1/web_looking/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
