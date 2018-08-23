@@ -41,11 +41,14 @@ def get_stocks():
 #浮点数
 
 def get_spread():
-    A = big_list[0]
-    B = big_list[1]
-    C = float(A)/float(B)
-    W = "%.6f" % C
-    big_list.append(W)
+    try:
+        A = big_list[0]
+        B = big_list[1]
+        C = float(A)/float(B)
+        W = "%.6f" % C
+        big_list.append(W)
+    except IndexError as e :
+        print(e)
 
 
 
@@ -73,10 +76,13 @@ def insertDB(content):
     connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='web_monitor',
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cursor = connection.cursor()
-    cursor.executemany('insert into j_stocks (indexs,stock,spread) values (%s,%s,%s)', content)
-    connection.commit()
-    connection.close()
-    print('向MySQL中添加数据成功！')
+    if len(big_list) == 3:
+        cursor.executemany('insert into j_stocks (indexs,stock,spread) values (%s,%s,%s)', content)
+        connection.commit()
+        connection.close()
+        print('向MySQL中添加数据成功！')
+    else:
+        print('出列了！')
 
 #有必要专门做一个监控系统！以来flask或Django，
 
@@ -96,7 +102,7 @@ if __name__ == '__main__':
         # }
         # insert_to_Mongo(con_dict)
 
-        time.sleep(3)
+        time.sleep(2)
 
         l_tuple = tuple(big_list)
         content = []
