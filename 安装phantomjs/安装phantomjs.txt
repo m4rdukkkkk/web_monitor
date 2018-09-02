@@ -1,0 +1,28 @@
+ 
+
+1、查看linux系统位数，来判断下载适配的PhantomJS；
+
+　　输入命令：# lsb_release -a
+2、下载PhantomJS；
+
+　　从官网http://phantomjs.org/download.html下载linux64位的安装包即  phantomjs-2.1.1-linux-x86_64.tar.bz2
+
+3、 重命名
+
+　　#mv phantomjs-2.1.1-linux-x86_64.tar.bz2 phantomjs
+
+4、上传到服务器并解压
+
+　　# tar xjf phantomjs-2.1.1-linux-x86_64.tar.bz2
+
+5、安装依赖软件
+
+　　# yum -y install fontconfig
+
+6、建立软链接
+
+　　# ln -s /data/tomcat/work/sxm/phantomjs/bin/phantomjs /usr/bin/
+
+7、验证是否安装成功：
+
+　　# phantomjs --version

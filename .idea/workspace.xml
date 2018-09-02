@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e210e3ed-0350-414d-af10-152b89697ddb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bond_bankStock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web_monitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_monitor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jstock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jstock_on_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Astock_on_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/Astock_on_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create_table.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,53 +29,57 @@
     <session id="-1911759381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="9" />
+          <entry key="log" value="2" />
+          <entry key="py" value="16" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="9" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="16" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1" />
-          <entry key="py" value="1794" />
-          <entry key="sql" value="33" />
+          <entry key="py" value="2202" />
+          <entry key="sql" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="1794" />
-          <entry key="SQL" value="33" />
+          <entry key="Python" value="2202" />
+          <entry key="SQL" value="73" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bond_bankStock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="19">
+              <caret line="19" column="11" selection-start-line="19" selection-end-line="20" />
               <folding>
                 <element signature="e#26#37#0" expanded="true" />
               </folding>
@@ -79,54 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="27" />
-              <folding>
-                <element signature="e#26#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virsual_tes1/virsual_tes1/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_table.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="107" column="20" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -137,6 +102,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -153,6 +119,10 @@
       <find>337</find>
       <find>沪深300指数期货(</find>
       <find>4803.03</find>
+      <find>98.</find>
+      <find>98.0</find>
+      <find>98</find>
+      <find>98.005</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,12 +131,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/create_table.sql" />
         <option value="$PROJECT_DIR$/TEST.html" />
         <option value="$PROJECT_DIR$/USstock_on_time.py" />
         <option value="$PROJECT_DIR$/HKstock_on_time.py" />
-        <option value="$PROJECT_DIR$/Astock_on_time.py" />
         <option value="$PROJECT_DIR$/Jstock_on_time.py" />
+        <option value="$PROJECT_DIR$/create_table.sql" />
+        <option value="$PROJECT_DIR$/Astock_on_time.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/bond_bankStock.py" />
       </list>
     </option>
   </component>
@@ -177,7 +149,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="52" />
+    <option name="x" value="174" />
+    <option name="y" value="442" />
     <option name="width" value="1346" />
     <option name="height" value="540" />
   </component>
@@ -186,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,17 +178,10 @@
               <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
               <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="web_monitor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_monitor" type="462c0819:PsiDirectoryNode" />
-              <item name="virsual_tes1" type="462c0819:PsiDirectoryNode" />
-              <item name="web_looking" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Jstock_on_time">
+  <component name="RunManager" selected="Python.bond_bankStock">
     <configuration name="Astock_on_time" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_monitor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,14 +293,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="bond_bankStock" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="web_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bond_bankStock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Jstock_on_time" />
       <item itemvalue="Python.HKstock_on_time" />
       <item itemvalue="Python.Astock_on_time" />
       <item itemvalue="Python.USstock_on_time" />
+      <item itemvalue="Python.bond_bankStock" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bond_bankStock" />
         <item itemvalue="Python.Jstock_on_time" />
         <item itemvalue="Python.Astock_on_time" />
         <item itemvalue="Python.HKstock_on_time" />
@@ -355,15 +345,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="714" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="850" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2680566" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26757532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.39728352" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996277" weight="0.39609483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39728352" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,13 +362,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.39657855" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32914925" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +381,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/on_time_spider.py" />
     <entry file="file://$PROJECT_DIR$/TEST.html" />
+    <entry file="file://$PROJECT_DIR$/virsual_tes1/web_looking/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virsual_tes1/virsual_tes1/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/geckodriver.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/HKstock_on_time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -399,48 +427,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/USstock_on_time.py">
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virsual_tes1/web_looking/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virsual_tes1/virsual_tes1/urls.py">
+    <entry file="file://$PROJECT_DIR$/bond_bankStock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Astock_on_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="19">
+          <caret line="19" column="11" selection-start-line="19" selection-end-line="20" />
           <folding>
             <element signature="e#26#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jstock_on_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="107" column="20" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
