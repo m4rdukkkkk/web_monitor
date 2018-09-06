@@ -23,17 +23,13 @@ def get_index():
     time.sleep(1)
     html = driver.page_source
     # print(html)
-    patt = re.compile('5国债1812</a></td><td><span class="price">(.*?)</span></td>',re.S)
+    patt = re.compile('<span class="real-price price green">(.*?)</span><span class="arrow"></span>',re.S)
     items = re.findall(patt,html)
-    str_item = str(items[0])
-    print(str_item)
-    big_list.append(str_item)
-
+    for ite in items:
+        big_list.append(ite)
     driver.close()
 
-    # for ite in items[0]:
-    #     print(type(it)e)
-        # big_list.append(ite)
+
 
 
 def get_stocks():
