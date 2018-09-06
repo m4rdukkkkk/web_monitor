@@ -15,27 +15,33 @@ from config import *
 #新浪爬实时数据不是很理想 应该是被反爬虫处理了，还是用的股市通
 
 def get_index():
-    # driver = webdriver.Chrome()
-    url = 'http://quote.eastmoney.com/gzqh/051112.html'
-    driver = webdriver.PhantomJS()
-    driver.set_window_size(1400,900) #设置窗口大小
+    driver = webdriver.Chrome()
+    url = 'https://finance.sina.com.cn/futures/quotes/TF1812.shtml'
+    # driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
+    driver.set_window_size(380,1200) #设置窗口大小
     driver.get(url)
+    time.sleep(1)
     html = driver.page_source
-    patt = re.compile('<td><span class="price_w">最新：</span><span class="price_num zxj red">(.*?)</span></td>',re.S)
+    # print(html)
+    patt = re.compile('5国债1812</a></td><td><span class="price">(.*?)</span></td>',re.S)
     items = re.findall(patt,html)
-    print(items)
-    # driver.close()
-    # for ite in items:
-    #     big_list.append(ite)
+    str_item = str(items[0])
+    print(str_item)
+    big_list.append(str_item)
 
+    driver.close()
+
+    # for ite in items[0]:
+    #     print(type(it)e)
+        # big_list.append(ite)
 
 
 def get_stocks():
-    url = 'https://gupiao.baidu.com/stock/sh600997.html'
+    url = 'https://www.laohu8.com/hq/s/601939'
     headers= {'Useragent':'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.0'}
     response = requests.get(url, headers=headers)
     content =  response.text
-    patt = re.compile('<strong  class="_close">(.*?)</strong>',re.S)
+    patt = re.compile('<td class="price">(.*?)</td>',re.S)
     items = re.findall(patt,content)
     print(items)
     for ite in items:
@@ -88,3 +94,6 @@ if __name__ == '__main__':
 
 #IndexError: list index out of range  如果出现这个错误就是因为开始没有抓取成功！，所以两个方案
 #1.要保持数据连续，就每隔1秒  2. 或者用异常捕捉，其实两个最好都用上,出啊如数据库，如果len长度不等于3就不插入
+
+
+# 2018.9.6 数据源进行调整 国债期货使用新浪财经，个股恋情老虎整证券，更加稳定
