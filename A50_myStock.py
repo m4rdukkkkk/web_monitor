@@ -8,7 +8,8 @@ import requests
 from selenium import webdriver
 #还是要用PhantomJS
 from config import *
-
+import datetime
+# 国债期货成本过高，套利效果不是很明显！尝试思考A50新加坡股指期货与内盘个股的结合！
 
 
 # 还必须要用selenium解决js渲染的问题 ,还是要寻找不用渲染的，因为要计算价差，同时解决两个渲染外加计算负担太大
@@ -16,7 +17,7 @@ from config import *
 
 def get_index():
     driver = webdriver.Chrome()
-    url = 'https://finance.sina.com.cn/futures/quotes/TF1812.shtml'
+    url = 'https://finance.sina.com.cn/futures/quotes/CHA50CFD.shtml'
     # driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
     driver.set_window_size(380,1200) #设置窗口大小
     driver.get(url)
@@ -31,15 +32,15 @@ def get_index():
 
 
 
-
+# 远兴能源
 def get_stocks():
-    url = 'https://www.laohu8.com/hq/s/601939'
+    url = 'https://www.laohu8.com/hq/s/000683'
     headers= {'Useragent':'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.0'}
     response = requests.get(url, headers=headers)
     content =  response.text
     patt = re.compile('<td class="price">(.*?)</td>',re.S)
     items = re.findall(patt,content)
-    print(items)
+    print(datetime.datetime.now())
     for ite in items:
         big_list.append(ite)
 
@@ -63,7 +64,7 @@ def insertDB(content):
     cursor = connection.cursor()
     #这里是判断big_list的长度，不是content字符的长度
     if  len(big_list) == 3:
-        cursor.executemany('insert into bond_bankStock (indexs,stock,spread) values (%s,%s,%s)', content)
+        cursor.executemany('insert into A50_myStock (indexs,stock,spread) values (%s,%s,%s)', content)
         connection.commit()
         connection.close()
         print('向MySQL中添加数据成功！')
