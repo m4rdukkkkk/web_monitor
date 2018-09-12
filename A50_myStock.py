@@ -28,6 +28,7 @@ def get_index():
     items = re.findall(patt,html)
     for ite in items:
         big_list.append(ite)
+    driver.close()
 
 
 
@@ -44,7 +45,6 @@ def get_stocks():
     patt = re.compile('<td class="price">(.*?)</td>',re.S)
     items = re.findall(patt,content)
     print(datetime.datetime.now())
-    print(items)
     for ite in items:
         big_list.append(ite)
 
