@@ -21,14 +21,17 @@ def get_index():
     # driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
     driver.set_window_size(380,1200) #设置窗口大小
     driver.get(url)
-    time.sleep(1)
+    # time.sleep(1)
     html = driver.page_source
-    # print(html)
-    patt = re.compile('<span class="real-price price green">(.*?)</span><span class="arrow"></span>',re.S)
+    # print(html)  #正则还是有问题，选择了一个动态变动的颜色标记是不好的 最近浏览不是每次都有的！所以用数字的颜色取判断吧
+    patt = re.compile('<th>最新价:'+'.*?</th><td class=".*?">(.*?)</td>',re.S)
     items = re.findall(patt,html)
     for ite in items:
         big_list.append(ite)
-    driver.close()
+
+
+
+
 
 
 
@@ -41,6 +44,7 @@ def get_stocks():
     patt = re.compile('<td class="price">(.*?)</td>',re.S)
     items = re.findall(patt,content)
     print(datetime.datetime.now())
+    print(items)
     for ite in items:
         big_list.append(ite)
 
