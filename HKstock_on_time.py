@@ -1,7 +1,7 @@
 
 
 # ! -*- coding:utf-8 -*-
-
+# 2019.1.23 增加index部位的手数部分
 import time
 import re
 import pymysql
@@ -9,13 +9,15 @@ import requests
 from lxml import etree
 import time
 import datetime
+from math import floor
+
+
 #  2019.1.13  中国燃气-恒生指数
 
-total_Cash = 100000
+total_Cash = 100000 # 10万港元
 index_Cash = 0.3*total_Cash
 stock_Cash = 0.6*total_Cash
-# FX_price = 6.95  都按照日元测算
-index_Future_N = (index_Cash)/20222 #向下取整 
+index_Future_N = floor(index_Cash/26666) # index部位是港元，每手保证金也是港元，不用汇率换算
 index_cost = 26666
 stock_cost = 26.1
 
@@ -25,7 +27,7 @@ def get_index_PL():
     selector = etree.HTML(html)
     price = selector.xpath('//*[@id="root"]/div/div[2]/div[2]/div[1]/div/div[1]/div[1]/div/strong/text()')
     items_float = float(price[0])
-    indexF_PL = (index_cost-items_float)*10  # mini恒指的交易乘数是10
+    indexF_PL = (index_cost-items_float)*10*index_Future_N  # index部位，价差，乘以每点10港元，再乘以手数，最终是港元的盈亏
     indexF_PL_2 = round(indexF_PL,2)
     big_list.append(str(indexF_PL_2))
 
@@ -36,7 +38,7 @@ def get_stocks_PL():
     html = response.text
     selector = etree.HTML(html)
     price = selector.xpath('//*[@id="root"]/div/div[2]/div[2]/div[1]/div/div[1]/div[1]/div/strong/text()')
-    stock_PL = (float(price[0]) - stock_cost)/stock_cost * (stock_Cash)  # 直接用价格做百分比计算即可
+    stock_PL = ((float(price[0]) - stock_cost)/stock_cost) *stock_Cash # 用股价套算出涨跌幅，乘上stock部位资金即可，也是港元盈亏
     stock_PL_2 = round(stock_PL,2)
     big_list.append(stock_PL_2)
 
@@ -50,7 +52,9 @@ def profilo_PL():
         profilo_PL_2 = round(profilo_PL,2)
         big_list.append(profilo_PL_2)
         total_profit_R = profilo_PL_2/total_Cash
-        total_profit_R_2 = '%.2f%%' % (total_profit_R * 100)
+        # total_profit_R_2 = '%.2f%%' % (total_profit_R * 100)  这个是为加上　％
+        total_profit_R_2 = round(total_profit_R,3) * 100  # 这个最简单
+
         big_list.append(total_profit_R_2)
 
     except IndexError as e:
@@ -101,3 +105,6 @@ if __name__ == '__main__':
 # profilo_PL varchar(10),
 # profilo_PL_R varchar(10)
 # ) engine=InnoDB  charset=utf8;
+
+
+#　drop table MHI_OneStock_PL;
