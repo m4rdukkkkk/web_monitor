@@ -1,7 +1,7 @@
 
 
 # ! -*- coding:utf-8 -*-
-
+# 增加index部位的手数
 import time
 import re
 import pymysql
@@ -9,12 +9,18 @@ import requests
 from lxml import etree
 import time
 import datetime
+from math import floor
+# 2019.1.23 修改日经套利模型的参数比例
+# 日经期货225的化429点就翻倍了，6:3的比例就不合适了
+# 尝试缩放到7：１
+# 日经也是一条毒蛇啊
+
+
 # 2019.1.13 大日本住友製薬(株)【4506 -——————日经225指数
-total_Cash = 1000000
-index_Cash = 0.3*total_Cash
-stock_Cash = 0.6*total_Cash
-# FX_price = 6.95  都按照日元测算
-index_Future_N = (index_Cash)/85576 #向下取整  选择mini日经225
+total_Cash = 10000000 # 初识资金1000万日元　
+index_Cash = 0.1*total_Cash
+stock_Cash = 0.7*total_Cash
+index_Future_N = floor(index_Cash/429000)# index的手数，向下取整。
 index_cost = 20359.00
 stock_cost = 3635
 
@@ -25,7 +31,7 @@ def get_index_PL():
     items = re.findall(patt,html)
     items_str = "".join(items[0].split(','))
     items_float = float(items_str)
-    indexF_PL = (index_cost-items_float)*100  # mini日经225的交易乘数是100
+    indexF_PL = (index_cost-items_float)*1000*index_Future_N  # index部位的价差，乘以每点1000日元，再乘以手数，最终是日元盈亏
     indexF_PL_2 = round(indexF_PL,2)
     big_list.append(str(indexF_PL_2))
 
@@ -39,7 +45,7 @@ def get_stocks_PL():
     patt = re.compile('<td class="stoksPrice">(.*?)</td>',re.S)
     items = re.findall(patt, content)
     price_str = "".join(items[0].split(','))
-    stock_PL = (int(price_str) - stock_cost)/stock_cost * (stock_Cash)  # 直接用价格做百分比计算即可
+    stock_PL = ((int(price_str) - stock_cost)/stock_cost) * stock_Cash # 股价涨跌幅，乘以stock总资金
     stock_PL_2 = round(stock_PL,2)
     big_list.append(stock_PL_2)
 
@@ -54,11 +60,14 @@ def profilo_PL():
         profilo_PL_2 = round(profilo_PL,2)
         big_list.append(profilo_PL_2)
         total_profit_R = profilo_PL_2/total_Cash
-        total_profit_R_2 = '%.2f%%' % (total_profit_R * 100)
+        # total_profit_R_2 = '%.2f%%' % (total_profit_R * 100)  这个是为加上　％
+        total_profit_R_2 = round(total_profit_R,3) * 100  # 这个最简单
+
         big_list.append(total_profit_R_2)
 
     except IndexError as e:
         print(e)
+
 
 
 
@@ -105,3 +114,6 @@ if __name__ == '__main__':
 # profilo_PL varchar(10),
 # profilo_PL_R varchar(10)
 # ) engine=InnoDB  charset=utf8;
+
+
+# drop table J225_OneStock_PL;
