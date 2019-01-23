@@ -1,6 +1,7 @@
 
 
 # ! -*- coding:utf-8 -*-
+# 2019.1.23  模型重新梳理，两次PL汇率换算，加上了手数的因素
 
 import time
 import re
@@ -10,12 +11,15 @@ from selenium import webdriver
 # 还是要用PhantomJS
 import datetime
 import string
+from math import floor
 
-total_Cash = 30000
-index_Cash = 0.3*total_Cash
-stock_Cash = 0.6*total_Cash
+
+
+total_Cash = 30000  # 是人民币
 FX_price = 6.95
-index_Future_N = (index_Cash/FX_price)/1000 #向下取整
+index_Cash_dollar = (0.3*total_Cash)/FX_price  # index的人民币部位除以汇率，变成美元
+stock_Cash = 0.6*total_Cash # stock部位的人民币
+index_Future_N = floor(index_Cash_dollar/880)  # index_leg的手数
 index_cost = 10500
 stock_cost = 2.40
 
@@ -37,7 +41,7 @@ def get_index_PL():
         patt = re.compile('<th>最新价:' + '.*?</th><td class=".*?">(.*?)</td>', re.S)
         items = re.findall(patt, html)
         items_int = int(items[0][:-3])
-        indexF_PL = (index_cost-items_int)*FX_price
+        indexF_PL = (index_cost-items_int)*1*index_Future_N*FX_price #把点差，乘以1美元，乘以手数，在乘以汇率换算成人民币盈亏
         indexF_PL_2 = round(indexF_PL,2)
         big_list.append(str(indexF_PL_2))
         driver.quit()
@@ -54,7 +58,7 @@ def get_stocks_PL():
     content = response.text
     patt = re.compile('<td class="price">(.*?)</td>', re.S)
     items = re.findall(patt, content)
-    stock_PL = (float(items[0])-stock_cost) *(stock_Cash/stock_cost)
+    stock_PL = ((float(items[0])-stock_cost) /stock_cost) *stock_Cash  # stock的涨跌幅 乘以 stock部位的人民币
     stock_PL_2 = round(stock_PL,2)
     big_list.append(stock_PL_2)
 
